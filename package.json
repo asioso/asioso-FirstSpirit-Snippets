@@ -14,6 +14,10 @@
     "Programming Languages",
     "Snippets"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asioso/asioso-FirstSpirit-Snippets"
+  },
   "contributes": {
     "languages": [{
       "id": "fs",
