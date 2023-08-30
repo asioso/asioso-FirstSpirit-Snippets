@@ -1,6 +1,7 @@
 {
   "name": "asioso-firstspirit-snippets",
   "displayName": "asioso FirstSpirit snippets",
+  "publisher": "asioso",
   "description": "FirstSpirit CMS snippets by asioso",
   "version": "0.0.1",
   "icon": "asioso-FirstSpirit-snippets.png",
