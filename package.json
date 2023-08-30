@@ -19,22 +19,35 @@
     "url": "https://github.com/asioso/asioso-FirstSpirit-Snippets"
   },
   "contributes": {
-    "languages": [{
-      "id": "fs",
-      "aliases": ["FirstSpirit", "fs"],
-      "extensions": ["fs"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "fs",
-      "scopeName": ".fs, .txt, .xml",
-      "path": "./syntaxes/fs.tmLanguage.json"
-    }],
+    "languages": [
+      {
+        "id": "fs",
+        "aliases": [
+          "FirstSpirit",
+          "fs"
+        ],
+        "extensions": [
+          "fs"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "fs",
+        "scopeName": ".fs, .txt, .xml",
+        "path": "./syntaxes/fs.tmLanguage.json"
+      }
+    ],
     "snippets": [
       {
         "language": "fs",
         "path": "./snippets/fs.code-snippets.json"
       }
     ]
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "fast-xml-parser": "^4.2.7"
   }
 }
