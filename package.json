@@ -1,0 +1,35 @@
+{
+  "name": "asioso-firstspirit-snippets",
+  "displayName": "asioso FirstSpirit snippets",
+  "description": "FirstSpirit CMS snippets by asioso",
+  "version": "0.0.1",
+  "icon": "asioso-FirstSpirit-snippets.png",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "CMS",
+    "FirstSpirit",
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fs",
+      "aliases": ["FirstSpirit", "fs"],
+      "extensions": ["fs"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "fs",
+      "scopeName": ".fs, .txt, .xml",
+      "path": "./syntaxes/fs.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "fs",
+        "path": "./snippets/fs.code-snippets.json"
+      }
+    ]
+  }
+}

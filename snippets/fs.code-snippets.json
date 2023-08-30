@@ -1,0 +1,865 @@
+{
+    "cms input comment": {
+      "prefix": "<cms-comment, cms-comment, comment",
+      "body": [
+        "<CMS_COMMENT>",
+        "     $1",
+        "</CMS_COMMENT>"
+      ],
+      "description": "cms input comment"
+    },
+    "cms input group": {
+      "prefix": "<cms-group, cms-group, group",
+      "body": [
+        "<CMS_GROUP>",
+        "    $1",
+        "</CMS_GROUP>"
+      ],
+      "description": "cms input group"
+    },
+    "cms input group full": {
+      "prefix": "<cms-group-full, cms-group-full, group-full",
+      "body": [
+        "<CMS_GROUP height=\"$1\" name=\"$2\" scrollable=\"${3|BOTH,FIXED,HORIZONTAL,VERTICAL|}\" tabs=\"${4|BOTTOM,LEFT,NONE,RIGHT,TOP|}\">",
+        "     $5",
+        "</CMS_GROUP>"
+      ],
+      "description": "cms input group full"
+    },
+    "cms input checkbox": {
+      "prefix": "<cms-checkbox, cms-checkbox, checkbox",
+      "body": [
+        "<CMS_INPUT_CHECKBOX name=\"${1}\">",
+        "  <ENTRIES>",
+        "    <ENTRY value=\"${2}\"/>",
+        "  </ENTRIES>",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"${3}\">",
+        "    </LANGINFO>",
+        "  </LANGINFOS>",
+        "</CMS_INPUT_CHECKBOX>"
+      ],
+      "description": "cms input checkbox"
+    },
+    "cms input checkbox full": {
+      "prefix": "<cms-checkbox-full, cms-checkbox-full, checkbox-full",
+      "body": [
+        "<CMS_INPUT_CHECKBOX",
+        "   name=\"${1}\"",
+        "   allowEmpty=\"${2|yes,no|}\"",
+        "   convertEntities=\"${3|NONE,QUOTE,STANDARD|}\"",
+        "   gridHeight=\"${4|1,2,3,4|}\"",
+        "   gridWidth=\"${5|1,2,3,4|}\"",
+        "   hFill=\"${6|yes,no|}\"",
+        "   hidden=\"${7|yes,no|}\"",
+        "   noBreak=\"${8|yes,no|}\"",
+        "   preset=\"${9|Copy,Default|}\"",
+        "   searchRelevancy=\"${10|DEFAULT,HIGH,NONE|}\"",
+        "   sortOrder=\"${11|ASCENDING,DESCENDING,KEEP_ORDER|}\"",
+        "   useLanguages=\"${12|yes,no|}\">",
+        "   <ENTRIES>",
+        "     <ENTRY value=\"${13}\"/>",
+        "   </ENTRIES>",
+        "   <LANGINFOS>",
+        "     <LANGINFO lang=\"*\" label=\"${14}\"/>",
+        "   </LANGINFOS>",
+        "</CMS_INPUT_CHECKBOX>"
+      ],
+      "description": "cms input checkbox full"
+    },
+    "cms input combobox": {
+      "prefix": "<cms-combobox, cms-combobox, combobox",
+      "body": [
+        "<CMS_INPUT_COMBOBOX name=\"$1\">",
+        "  <ENTRIES>",
+        "    <ENTRY value=\"$2\"/>",
+        "  </ENTRIES>",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$3\"/>",
+        "  </LANGINFOS>",
+        "</CMS_INPUT_COMBOBOX>"
+      ],
+      "description": "cms input combobox"
+    },
+    "cms input combobox full": {
+      "prefix": "<cms-combobox-full, cms-combobox-full, combobox-full",
+      "body": [
+        "<CMS_INPUT_COMBOBOX",
+        "  name=\"$1\"",
+        "  allowEmpty=\"${2|yes,no|}\"",
+        "  convertEntities=\"${3|NONE,QUOTE,STANDARD|}\"",
+        "  editable=\"${4|yes,no|}\"",
+        "  hFill=\"${5|yes,no|}\"",
+        "  hidden=\"${6|yes,no|}\"",
+        "  length=\"$7\"",
+        "  noBreak=\"${8|yes,no|}\"",
+        "  preset=\"${9|Copy,Default|}\"",
+        "  searchRelevancy=\"${10|DEFAULT,HIGH,NONE|}\"",
+        "  singleLine=\"${11|yes,no|}\"",
+        "  sortOrder=\"${12|ASCENDING,DESCENDING,KEEP_ORDER|}\"",
+        "  useLanguages=\"${13|yes,no|}\">",
+        "  <ENTRIES>",
+        "    <ENTRY value=\"$14\"/>",
+        "   </ENTRIES>",
+        "   <LANGINFOS>",
+        "     <LANGINFO lang=\"*\" label=\"$15\"/>",
+        "    </LANGINFOS>",
+        "</CMS_INPUT_COMBOBOX>"
+      ],
+      "description": "cms input combobox full"
+    },
+    "cms input date": {
+      "prefix": "<cms-date, cms-date, date",
+      "body": [
+        "<CMS_INPUT_DATE name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\">",
+        "    </LANGINFO>",
+        "  </LANGINFOS>",
+        "</CMS_INPUT_DATE>"
+      ],
+      "description": "cms input date"
+    },
+    "cms input dom": {
+      "prefix": "<cms-dom, cms-dom, dom",
+      "body": [
+        "<CMS_INPUT_DOM name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\">",
+        "    </LANGINFO>",
+        "  </LANGINFOS>",
+        "</CMS_INPUT_DOM>"
+      ],
+      "description": "cms input dom"
+    },
+    "cms input domtable": {
+      "prefix": "<cms-domtable, cms-domtable, domtable",
+      "body": [
+        "<CMS_INPUT_DOMTABLE name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\"",
+        "       </LANGINFO>",
+        "    </LANGINFOS>",
+        "</CMS_INPUT_DOMTABLE>"
+      ],
+      "description": "cms input domtable"
+    },
+    "cms input imagemap": {
+      "prefix": "<cms-imagemap, cms-imagemap, imagemap",
+      "body": [
+        "CMS_INPUT_IMAGEMAP name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\">",
+        "    </LANGINFO>",
+        "  </LANGINFOS>",
+        "</CMS_INPUT_IMAGEMAP>"
+      ],
+      "description": "cms input imagemap"
+    },
+    "cms input link": {
+      "prefix": "<cms-link, cms-link, link",
+      "body": [
+        "<CMS_INPUT_LINK name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\"/>",
+        "  </LANGINFOS>",
+        "</CMS_INPUT_LINK>"
+      ],
+      "description": "cms input link"
+    },
+    "cms input list": {
+      "prefix": "<cms-list, cms-list, list",
+      "body": [
+        "<CMS_INPUT_LIST name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\"/>",
+        "  </LANGINFOS>",
+        "</CMS_INPUT_LIST>"
+      ],
+      "description": "cms input list"
+    },
+    "cms input number": {
+      "prefix": "<cms-number, cms-number, number",
+      "body": [
+        "<CMS_INPUT_NUMBER name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\"/>",
+        "  </LANGINFOS>",
+        "</CMS_INPUT_NUMBER>"
+      ],
+      "description": "cms input number"
+    },
+    "cms input permission": {
+      "prefix": "<cms-permission, cms-permission, permission",
+      "body": [
+        "<CMS_INPUT_PERMISSION name=\"$1\" group=\"$2\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$3\"/>",
+        "   </LANGINFOS>",
+        "</CMS_INPUT_PERMISSION>"
+      ],
+      "description": "cms input permission"
+    },
+    "cms input radiobutton": {
+      "prefix": "<cms-radiobutton, cms-radiobutton, radiobutton",
+      "body": [
+        "<CMS_INPUT_RADIOBUTTON name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\"/>",
+        "   </LANGINFOS>",
+        "</CMS_INPUT_RADIOBUTTON>"
+      ],
+      "description": "cms input radiobutton"
+    },
+    "cms input sectionlist": {
+      "prefix": "<cms-sectionlist, cms-sectionlist, sectionlist",
+      "body": [
+        "<CMS_INPUT_SECTIONLIST name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\"/>",
+        "   </LANGINFOS>",
+        "</CMS_INPUT_SECTIONLIST>"
+      ],
+      "description": "cms input sectionlist"
+    },
+    "cms input text": {
+      "prefix": "<cms-text, cms-text, text",
+      "body": [
+        "<CMS_INPUT_TEXT name=\"$1\"> ",
+        "  <LANGINFOS>",
+        "     <LANGINFO lang=\"*\" label=\"$2\"/>",
+        "   </LANGINFOS>",
+        "</CMS_INPUT_TEXT>"
+      ],
+      "description": "input text"
+    },
+    "cms input text full": {
+      "prefix": "<cms-text-full, cms-text-full, text-full",
+      "body": [
+        "<CMS_INPUT_TEXT",
+        "  name=\"$1\"",
+        "  allowEmpty=\"${2|yes,no|}\"",
+        "  convertEntities=\"${3|NONE,QUOTE,STANDARD|}\"",
+        "  editable=\"${4|yes,no|}\"",
+        "  hFill=\"${5|yes,no|}\"",
+        "  hidden=\"${6|yes,no|}\"",
+        "  length=\"$7\"",
+        "  maxInputLength=\"$8\"",
+        "  noBreak=\"${9|yes,no|}\"",
+        "  password=\"${10|HASH,HIDDEN,PLAIN|}\"",
+        "  preset=\"${11|Copy,Default|}\"",
+        "  searchRelevancy=\"${12|DEFAULT,HIGH,NONE|}\"",
+        "  singleLine=\"${13|yes,no|}\"",
+        "  useLanguages=\"${14|yes,no|}\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$15\"/>",
+        "    </LANGINFOS>",
+        "</CMS_INPUT_TEXT>"
+      ],
+      "description": "cms input text full"
+    },
+    "cms input textarea": {
+      "prefix": "<cms-textarea, cms-textarea, textarea",
+      "body": [
+        "<CMS_INPUT_TEXTAREA name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\"/>",
+        "   </LANGINFOS>",
+        "</CMS_INPUT_TEXTAREA>"
+      ],
+      "description": "cms input textarea"
+    },
+    "cms input toggle": {
+      "prefix": "<cms-toggle, cms-toggle, toggle",
+      "body": [
+        "<CMS_INPUT_TOGGLE name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\"/>",
+        "   </LANGINFOS>",
+        "  <OFF>",
+        "    <LANGINFO lang=\"*\" label=\"$3\"/>",
+        "  </OFF>",
+        "  <ON>",
+        "    <LANGINFO lang=\"*\" label=\"$4\"/>",
+        "  </ON>",
+        "</CMS_INPUT_TOGGLE>"
+      ],
+      "description": "cms input toggle"
+    },
+    "cms input entries": {
+      "prefix": "<cms-entries, cms-entries, entries",
+      "body": [
+        "<ENTRIES>",
+        "  <ENTRY value=\"$1\">",
+        "   </ENTRY>",
+        "</ENTRIES>"
+      ],
+      "description": "cms input entries"
+    },
+    "cms input entry": {
+      "prefix": "<cms-entry, cms-entry, entry",
+      "body": [
+        "<ENTRY value=\"$1\">",
+        "</ENTRY>"
+      ],
+      "description": "cms input entry"
+    },
+    "cms input label": {
+      "prefix": "<cms-label, cms-label, label",
+      "body": [
+        "<CMS_LABEL>",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$1\">",
+        "    </LANGINFO>",
+        "  </LANGINFOS>",
+        "</CMS_LABEL>"
+      ],
+      "description": "cms input label"
+    },
+    "cms input module": {
+      "prefix": "<cms-module, cms-module, module",
+      "body": [
+        "<CMS_MODULE>",
+        "  $1",
+        "</CMS_MODULE>"
+      ],
+      "description": "cms input module"
+    },
+    "cms input langinfos": {
+      "prefix": "<cms-langinfos, cms-langinfos, langinfos",
+      "body": [
+        "<LANGINFOS>",
+        "  <LANGINFO lang=\"${1|*,EN,DE|}\" label=\"$2\"/>",
+        "</LANGINFOS>"
+      ],
+      "description": "cms input langinfos"
+    },
+    "cms input langinfo": {
+      "prefix": "<cms-langinfo, cms-langinfo, langinfo",
+      "body": [
+        "<LANGINFO lang=\"${1|*,EN,DE|}\" label=\"$2\"/>"
+      ],
+      "description": "cms input langinfo"
+    },
+    "fs input button": {
+      "prefix": "<cms-button, cms-button, <fs-button, fs-button, button",
+      "body": [
+        "<FS_BUTTON name=\"$1\">",
+        "  <LANGINFOS>",
+        "     <LANGINFO lang=\"\" label=\"$2\">",
+        "   </LANGINFO>",
+        "  </LANGINFOS>",
+        "</FS_BUTTON>"
+      ],
+      "description": "fs input button"
+    },
+    "fs input catalog": {
+      "prefix": "<cms-catalog, cms-catalog, <FS_CATALOG, fs-catalog, catalog",
+      "body": [
+        "<FS_CATALOG name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\">",
+        "   </LANGINFO>",
+        "  </LANGINFOS>",
+        "  <TEMPLATES type=\"${3|LINK,SECTION|}\">",
+        "  <TEMPLATE uid=\"$4\">",
+        "  </TEMPLATES>",
+        "</FS_CATALOG>"
+      ],
+      "description": "fs input catalog"
+    },
+    "fs input dataset": {
+      "prefix": "<cms-dataset, cms-dataset, <fs-dataset, fs-dataset, dataset",
+      "body": [
+        "<FS_DATASET name=\"$1\">",
+        "  <LANGINFOS>",
+        "     <LANGINFO lang=\"\" label=\"$2\">",
+        "   </LANGINFO>",
+        "  </LANGINFOS>",
+        "</FS_DATASET>"
+      ],
+      "description": "fs input dataset"
+    },
+    "fs input index": {
+      "prefix": "<cms-index, cms-index, <fs_index, fs-index, index",
+      "body": [
+        "<FS_INDEX name=\"$1\">",
+        "  <LANGINFOS>",
+        "    <LANGINFO lang=\"*\" label=\"$2\">",
+        "   </LANGINFO>",
+        "  </LANGINFOS>",
+        "  <SOURCE name=\"${3|ContentCreatorDatasourceEditor/ContentStore,DatasetDataAccessPlugin,videomanagementpro-fsm/VideoManagementProPlugin|}\">",              
+        "  </SOURCE>",
+        "</FS_INDEX>"
+      ],
+      "description": "fs input index"
+    },
+    "fs input invalid component": {
+      "prefix": "<cms-invalid-component, cms-invalid-component, <fs_invalid-component, fs-invalid-component, invalid-component",
+      "body": [
+        "<FS_INVALID_COMPONENT_CONTAINER name=\"$1\">",
+        "</FS_INVALID_COMPONENT_CONTAINER>"
+      ],
+      "description": "fs input invalid component"
+    },
+    "fs input reference": {
+      "prefix": "<cms-reference, cms-reference, <fs-reference, fs-reference, reference",
+      "body": [
+        "<FS_REFERENCE name=\"$1\">",
+        "  <LANGINFOS>",
+        "     <LANGINFO lang=\"\" label=\"$2\">",
+        "   </LANGINFO>",
+        "  </LANGINFOS>",
+        "</FS_REFERENCE>"
+      ],
+      "description": "fs input reference"
+    },
+    "fs input reference image": {
+      "prefix": "<cms-ref-image, cms-ref-image, <cms-image, cms-image, image",
+      "body": [
+        "<FS_REFERENCE name=\"${1|st_image|}\" imagePreview=\"${2|yes,no|}\" upload=\"${3|yes,no|}\">",
+        "  <FILTER>",
+        "    <ALLOW type=\"${4|PICTURE,ALL,CONTENT2,CONTENTFOLDER,DOCUMENTGROUP,FILE,FOLDERS,FORMATTEMPLATE,FORMATTEMPLATEFOLDER,GCAFOLDER,GCAPAGE,LINKTEMPLATE,MEDIA,MEDIAFOLDER,PAGE,PAGEFOLDER,PAGEREF,PAGEREFFOLDER,SCHEMA,SCRIPT,SECTIONTEMPLATE,SITESTOREFOLDER,STYLETEMPLATE,TABLEFORMATTEMPLATE,TEMPLATE,TEMPLATEFOLDER,WORKFLOW|}\"/>",
+        "    <HIDE type=\"${5|FOLDERS,ALL,CONTENT2,CONTENTFOLDER,DOCUMENTGROUP,FILE,FORMATTEMPLATE,FORMATTEMPLATEFOLDER,GCAFOLDER,GCAPAGE,LINKTEMPLATE,MEDIA,MEDIAFOLDER,PAGE,PAGEFOLDER,PAGEREF,PAGEREFFOLDER,PICTURE,SCHEMA,SCRIPT,SECTIONTEMPLATE,SITESTOREFOLDER,STYLETEMPLATE,TABLEFORMATTEMPLATE,TEMPLATE,TEMPLATEFOLDER,WORKFLOW|}\"/>",
+        "   </FILTER>",
+        "   <LANGINFOS>",
+        "     <LANGINFO lang=\"*\" label=\"${6|Image|}\" description=\"${7|Please select a picture|}\"/>",
+        "    </LANGINFOS>",
+        "    <PROJECTS>",
+        "      <LOCAL name=\".\">",
+        "         <SOURCES>",
+        "           <FOLDER name=\"${8|root|}\" store=\"${9|mediastore|}\"/>",
+        "        </SOURCES>",
+        "      </LOCAL>",
+        "    </PROJECTS>",
+        "</FS_REFERENCE>"
+      ],
+      "description": "fs input reference image"
+    },
+    "fs format template": {
+      "prefix": "<cms-format-template, cms-format-template, format-template",
+      "body": [
+        "<FORMATS> ",
+        "<TEMPLATE name=\"upper_headline\"/> ",
+        "<TEMPLATE name=\"lower_headline\"/>",
+        "</FORMATS>"
+      ],
+      "description": "fs format template"
+    },
+    "fs create section button": {
+      "prefix": "<cms-createsection-button, cms-createsection-button, createsection-button, createsection",
+      "body": [
+        "<FS_BUTTON",
+        "    name=\"pt_createSection\"",
+        "    hidden=\"yes\"",
+        "    icon=\"fs:new\"",
+        "    onClick=\"class:NewSection\"",
+        "    style=\"firstspirit\"",
+        "    useLanguages=\"yes\">",
+        "    <LANGINFOS>",
+        "      <LANGINFO lang=\"*\" label=\"Create section\"/>",
+        "    </LANGINFOS>",
+        "</FS_BUTTON>"
+      ],
+      "description": "fs create section button"
+    },
+    "cms input allow": {
+      "prefix": "<cms-allow, cms-allow, allow",
+      "body": [
+        "<ALLOW type=\"${1|ALL,CONTENT2,CONTENTFOLDER,DOCUMENTGROUP,FILE,FOLDERS,FORMATTEMPLATE,FORMATTEMPLATEFOLDER,GCAFOLDER,GCAPAGE,LINKTEMPLATE,MEDIA,MEDIAFOLDER,PAGE,PAGEFOLDER,PAGEREF,PAGEREFFOLDER,PICTURE,SCHEMA,SCRIPT,SECTIONTEMPLATE,SITESTOREFOLDER,STYLETEMPLATE,TABLEFORMATTEMPLATE,TEMPLATE,TEMPLATEFOLDER,WORKFLOW|}\"/>"
+      ],
+      "description": "cms input allow"
+    },
+    "description attribute": {
+      "prefix": "<cms-description-attr, cms-description-attr, description-attr",
+      "body": [
+        " description=\"$1\""
+      ],
+      "description": "description attribute"
+    },
+    "label attribute": {
+      "prefix": "<cms-label-attr, cms-label-attr, label-attribute",
+      "body": [
+        " label=\"$1\""
+      ],
+      "description": "label attribute"
+    },
+    "type attribute": {
+      "prefix": "<cms-type-attr, cms-type-attr, type-attr",
+      "body": [
+        " type=\"${1|ALL,CONTENT2,CONTENTFOLDER,DOCUMENTGROUP,FILE,FOLDERS,FORMATTEMPLATE,FORMATTEMPLATEFOLDER,GCAFOLDER,GCAPAGE,LINKTEMPLATE,MEDIA,MEDIAFOLDER,PAGE,PAGEFOLDER,PAGEREF,PAGEREFFOLDER,PICTURE,SCHEMA,SCRIPT,SECTIONTEMPLATE,SITESTOREFOLDER,STYLETEMPLATE,TABLEFORMATTEMPLATE,TEMPLATE,TEMPLATEFOLDER,WORKFLOW|}\""
+      ],
+      "description": "type attribute"
+    },
+    "upload attribute": {
+      "prefix": "<cms-upload, cms-upload, upload",
+      "body": [
+        " upload=\"${1|yes,no|}\""
+      ],
+      "description": "upload attribute"
+    },
+    "imagePreview attribute": {
+      "prefix": "<cms-imagePreview, cms-imagePreview, imagePreview",
+      "body": [
+        " imagePreview=\"${1|yes,no|}\""
+      ],
+      "description": "imagePreview attribute"
+    },
+    "allowEmpty attribute": {
+      "prefix": "<cms-allowEmpty, cms-allowEmpty, allowEmpty",
+      "body": [
+        " allowEmpty=\"${1|yes,no|}\""
+      ],
+      "description": "allowEmpty attribute"
+    },
+    "convertEntities attribute": {
+      "prefix": "<cms-convertEntities, cms-convertEntities, convertEntities",
+      "body": [
+        " convertEntities=\"${1|NONE,QUOTE,STANDARD|}\""
+      ],
+      "description": "convertEntities attribute"
+    },
+    "editable attribute": {
+      "prefix": "<cms-editable, cms-editable, editable",
+      "body": [
+        " editable=\"${1|yes,no|}\""
+      ],
+      "description": "editable attribute"
+    },
+    "gridHeight attribute": {
+      "prefix": "<cms-gridHeight, cms-gridHeight, gridHeight",
+      "body": [
+        " gridHeight=\"${1|1,2,3,4|}\""
+      ],
+      "description": "gridHeight attribute"
+    },
+    "gridWidth attribute": {
+      "prefix": "<cms-gridWidth, cms-gridWidth, gridWidth",
+      "body": [
+        " gridWidth=\"${1|1,2,3,4|}\""
+      ],
+      "description": "gridWidth attribute"
+    },
+    "hidden attribute": {
+      "prefix": "<cms-hidden, cms-hidden, hidden",
+      "body": [
+        " hidden=\"${1|yes,no|}\""
+      ],
+      "description": "hidden attribute"
+    },
+    "noBreak attribute": {
+      "prefix": "<cms-noBreak, cms-noBreak, noBreak",
+      "body": [
+        " noBreak=\"${1|yes,no|}\""
+      ],
+      "description": "noBreak attribute"
+    },
+    "password attribute": {
+      "prefix": "<cms-password, cms-password, password",
+      "body": [
+        " password=\"${1|HASH,HIDDEN,PLAIN|}\""
+      ],
+      "description": "password attribute"
+    },
+    "preset attribute": {
+      "prefix": "<cms-preset, cms-preset, preset",
+      "body": [
+        " preset=\"${9|Copy,Default|}\""
+      ],
+      "description": "preset attribute"
+    },
+    "searchRelevancy attribute": {
+      "prefix": "<cms-searchRelevancy, cms-searchRelevancy, searchRelevancy",
+      "body": [
+        " searchRelevancy=\"${1|DEFAULT,HIGH,NONE|}\""
+      ],
+      "description": "searchRelevancy attribute"
+    },
+    "sortOrder attribute": {
+      "prefix": "<cms-sortOrder, cms-sortOrder, sortOrder",
+      "body": [
+        " sortOrder=\"${1|ASCENDING,DESCENDING,KEEP_ORDER|}\""
+      ],
+      "description": "sortOrder attribute"
+    },
+    "value attribute": {
+      "prefix": "<cms-value, cms-value, value",
+      "body": [
+        " value=\"$1\""
+      ],
+      "description": "value attribute"
+    },
+    "name attribute": {
+      "prefix": "<cms-name, cms-name, name",
+      "body": [
+        " name=\"${1}\""
+      ],
+      "description": "name attribute"
+    },
+    "hfill attribute": {
+      "prefix": "<cms-hfill, cms-hfill, hfill",
+      "body": [
+        " hfill=\"${1|yes,no|}\""
+      ],
+      "description": "hfill attribute"
+    },
+    "singleLine attribute": {
+      "prefix": "<cms-singleLine, cms-singleLine, cms-singleLine",
+      "body": [
+        " singleLine=\"${1|yes,no|}\""
+      ],
+      "description": "singleLine attribute"
+    },
+    "useLanguages attribute": {
+      "prefix": "<cms-useLanguages, cms-useLanguages, useLanguages",
+      "body": [
+        " useLanguages=\"${1|yes,no|}\""
+      ],
+      "description": "useLanguages attribute"
+    },
+    "height attribute": {
+      "prefix": "<cms-height, cms-height, height",
+      "body": [
+        " height=\"${1}\""
+      ],
+      "description": "height attribute"
+    },
+    "scrollable attribute": {
+      "prefix": "<cms-scrollable, cms-scrollable, scrollable",
+      "body": [
+        " scrollable=\"${1|BOTH,FIXED,HORIZONTAL,VERTICAL|}\""
+      ],
+      "description": "scrollable attribute"
+    },
+    "tabs attribute": {
+      "prefix": "<cms-tabs, cms-tabs, tabs",
+      "body": [
+        " tabs=\"${1|BOTTOM,LEFT,NONE,RIGHT,TOP|}\""
+      ],
+      "description": "tabs attribute"
+    },
+    "cms value": {
+      "prefix": "$cms-value, cms-value, value",
+      "body": [
+        "$$CMS_VALUE($1, default:\"\")$"
+      ],
+      "description": "cms value html input"
+    },
+    "cms set": {
+      "prefix": "$cms-set, cms-set, set",
+      "body": [
+        "  $$CMS_SET($1,$2)$"
+      ],
+      "description": "cms set"
+    },
+    "fs set code": {
+      "prefix": "$cms-set-code, cms-set-code, variable-code, set-variable, set-code",
+      "body": [
+        "$$CMS_SET($1)$",
+        "  $2",
+        "$$CMS_END_SET$"
+      ],
+      "description": "fs set code"
+    },
+    "fs end set": {
+      "prefix": "$cms-end-set, cms-end-set, end-set",
+      "body": [
+        "$$CMS_END_SET$"
+      ],
+      "description": "fs end set"
+    },
+    "cms trim": {
+      "prefix": "$cms-trim, cms-trim, trim",
+      "body": [
+        "  $$CMS_TRIM(level:$1)$",
+        "  $$CMS_END_TRIM$"
+      ],
+      "description": "cms trim"
+    },
+    "fs end trim": {
+      "prefix": "$cms-end-trim, cms-end-trim, end-trim",
+      "body": [
+        "$$CMS_END_TRIM$"
+      ],
+      "description": "fs end trim"
+    },
+    "cms render": {
+      "prefix": "$cms-render, cms-render, render",
+      "body": [
+        "  $$CMS_RENDER(${1|template:,media:|} \"$2\")$"
+      ],
+      "description": "cms render"
+    },
+    "cms ref": {
+      "prefix": "$cms-ref, cms-ref, ref",
+      "body": [
+        "  $$CMS_REF(${1|template:,media:|} \"$2\")$"
+      ],
+      "description": "cms render"
+    },
+    "cms global page": {
+      "prefix": "$cms-global-page, cms-global-page, global-page-body",
+      "body": [
+        "$$CMS_VALUE(#global.page.body(\"\"))$"
+      ],
+      "description": "cms global page"
+    },
+    "cms if loop": {
+      "prefix": "$cms-if, cms-if, fs-if",
+      "body": [
+        "$$CMS_IF(${1|#classloader,#global,#mathContext,#startdate,inherit_format_conversion,pt_createSection,ptCanonicalTag,ptComment,ptMetaDescription,ptMetaKeywords,ptOgDescription,ptOgImage,ptOgTitle,ptOgType,ptPageTitle,ptResponsible,st_footerscript,st_header_script,stDebugDate,apiDoc(),class(),dataAssociation(),editorId(),eval(),font(),fsbutton(),guiDoc(),if(),isSet(),lambda(),previewId(),ref()|})$",
+        "$$CMS_END_IF$"
+      ],
+      "description": "if loop"
+    },
+    "fs end if": {
+      "prefix": "$cms-end-if, cms-end-if, end-if",
+      "body": [
+        "$$CMS_END_IF$"
+      ],
+      "description": "fs end if"
+    },
+    "cms if else loop": {
+      "prefix": "$cms-ifelse, cms-ifelse, if-else",
+      "body": [
+        "$$CMS_IF(${1|#classloader,#global,#mathContext,#startdate,inherit_format_conversion,pt_createSection,ptCanonicalTag,ptComment,ptMetaDescription,ptMetaKeywords,ptOgDescription,ptOgImage,ptOgTitle,ptOgType,ptPageTitle,ptResponsible,st_footerscript,st_header_script,stDebugDate,apiDoc(),class(),dataAssociation(),editorId(),eval(),font(),fsbutton(),guiDoc(),if(),isSet(),lambda(),previewId(),ref()|})$",
+        "$$CMS_ELSE$",
+        "$$CMS_END_IF$"
+      ],
+      "description": "if else loop"
+    },
+    "fs elsif": {
+      "prefix": "$cms-elsif, cms-elsif, elsif",
+      "body": [
+        "$$CMS_IF(${1|#classloader,#global,#mathContext,#startdate,inherit_format_conversion,pt_createSection,ptCanonicalTag,ptComment,ptMetaDescription,ptMetaKeywords,ptOgDescription,ptOgImage,ptOgTitle,ptOgType,ptPageTitle,ptResponsible,st_footerscript,st_header_script,stDebugDate,apiDoc(),class(),dataAssociation(),editorId(),eval(),font(),fsbutton(),guiDoc(),if(),isSet(),lambda(),previewId(),ref()|})$",
+        "  $$CMS_ELSIF(${2|#classloader,#global,#mathContext,#startdate,inherit_format_conversion,pt_createSection,ptCanonicalTag,ptComment,ptMetaDescription,ptMetaKeywords,ptOgDescription,ptOgImage,ptOgTitle,ptOgType,ptPageTitle,ptResponsible,st_footerscript,st_header_script,stDebugDate,apiDoc(),class(),dataAssociation(),editorId(),eval(),font(),fsbutton(),guiDoc(),if(),isSet(),lambda(),previewId(),ref()|})$",
+        "  $$CMS_ELSE$",
+        "$$CMS_END_IF$"
+      ],
+      "description": "fs elsif"
+    },
+    "cms for loop": {
+      "prefix": "$cms-for-loop, cms-for-loop, for",
+      "body": [
+        "$$CMS_FOR($1, $2)$",
+        "  $$CMS_VALUE($3)$",
+        "$$CMS_END_FOR$"
+      ],
+      "description": "cms for loop"
+    },
+    "fs end for": {
+      "prefix": "$cms-end-for, cms-end-for, end-for",
+      "body": [
+        "$$CMS_END_FOR$"
+      ],
+      "description": "fs end for"
+    },
+    "fs case switch": {
+      "prefix": "$cms-case, cms-case, case,",
+      "body": [
+        "  $$CMS_CASE($1)$"
+      ],
+      "description": "fs case switch"
+    },
+    "cms switch loop": {
+      "prefix": "$cms-switch-loop, cms-switch-loop, switch",
+      "body": [
+        "$$CMS_SWITCH($1)$",
+        "  $$CMS_CASE($2)$",
+        "$$CMS_END_SWITCH$"
+      ],
+      "description": "cms switch loop"
+    },
+    "fs end switch": {
+      "prefix": "$cms-end-switch, cms-end-switch, end-switch",
+      "body": [
+        "$$CMS_END_SWITCH$"
+      ],
+      "description": "fs end switch"
+    },
+    "cms editor inline": {
+      "prefix": "$cms-editorId, cms-editorId, editorId",
+      "body": [
+        " $$CMS_VALUE(editorId())$"
+      ],
+      "description": "cms editor inline"
+    },
+    "cms editor name": {
+      "prefix": "$cms-editorName, cms-editorName, editorName",
+      "body": [
+        "$$CMS_VALUE(editorId(editorName:\"$1\"))$"
+      ],
+      "description": "cms editor name"
+    },
+    "default html": {
+      "prefix": "cms-default-attr, cms-default-attr, default",
+      "body": [
+        " default:\"\""
+      ],
+      "description": "default html attribute"
+    },
+    "st convetions": {
+      "prefix": "$cms-st, cms-st, st, st_",
+      "body": [
+        "st_${1|text,title,headline,paragraph,picture,subtitle,abstract,content,item|}"
+      ],
+      "description": "Section templates convetions"
+    },
+    "fs empty check": {
+      "prefix": "$cms-isEmpty, cms-isEmpty, isEmpty",
+      "body": [
+        "isEmpty"
+      ],
+      "description": "fs empty check"
+    },
+    "cms p tag": {
+      "prefix": "$cms-p-tag, cms-p-tag, p-tag, p-tag-full",
+      "body": [
+        "$$CMS_IF(!st_text.isEmpty())$",
+        "  $$CMS_SET(set_st_pClass, \"enter-your-class-here\")$",
+        "  $$CMS_SET(set_st_pContentCreator, editorId(editorName: \"st_text\"))$",
+        "  $$CMS_VALUE(st_text, default:\"\")$",
+        "$$CMS_END_IF$"
+      ],
+      "description": "cms p tag"
+    },
+    "fs include": {
+      "prefix": "$cms-include, cms-include, include",
+      "body": [
+        "$$CMS_INCLUDE(${1|#classloader,#global,#mathContext,#startdate,inherit_format_conversion,pt_createSection,ptCanonicalTag,ptComment,ptMetaDescription,ptMetaKeywords,ptOgDescription,ptOgImage,ptOgTitle,ptOgType,ptPageTitle,ptResponsible,st_footerscript,st_header_script,stDebugDate,apiDoc(),class(),dataAssociation(),editorId(),eval(),font(),fsbutton(),guiDoc(),if(),isSet(),lambda(),previewId(),ref()|})$"
+      ],
+      "description": "fs include"
+    },
+    "rule validation": {
+      "prefix": "$cms-rules-validation, cms-rules-validation, rules-validation",
+      "body": [      
+        "  <RULE>",
+        "    <WITH>",
+        "      <NOT>",
+        "        <AND>",
+        "          <!-- it checks if the page is translated -->",
+        "          <PROPERTY name=\"TRANSLATED\" source=\"#global\"/>",
+        "          <!-- it checks if the field is empty -->",
+        "          <PROPERTY name=\"EMPTY\" source=\"${1}\"/>",
+        "        </AND>",
+        "      </NOT>",
+        "    </WITH>",
+        "    <DO>",
+        "      <VALIDATION scope=\"RELEASE\">",
+        "       <!-- source should be the identical -->",
+        "        <PROPERTY name=\"VALID\" source=\"${2}\"/>",
+        "        <MESSAGE lang=\"*\" text=\"The editor must not be empty!\"/>",
+        "      </VALIDATION>",
+        "    </DO>",
+        "  </RULE>"        
+      ],
+      "description": "rule validation"
+    },
+    "cms value": {
+      "prefix": "$cms-value, cms-value, value",
+      "body": [
+        "$$CMS_VALUE()$"
+      ],
+      "description": "cms value"
+    }
+  }
