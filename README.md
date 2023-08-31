@@ -1,4 +1,4 @@
-# fs-snippets-asioso README
+# asioso FirstSpirit snippets README
 
 This is the README for asioso FirstSpirit VSC extension. 
 If you ever wondered is it possible to work with FirstSpirit outside it, well the answer is YES. 
